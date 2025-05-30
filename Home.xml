@@ -34,7 +34,7 @@
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
 				<left>0</left>
-<top>550</top>
+<top>520</top>
 				<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 					<effect type="slide" end="0,20" time="60" tween="sine" />
 					<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
@@ -289,7 +289,7 @@
 						<width>430</width>
 						<aligny>center</aligny>
 						<height>98</height>
-						<font>font36_title</font>
+						<font>font52_title</font>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
 					</control>
@@ -300,7 +300,7 @@
 							<top>239</top>
 							<width>710</width>
 							<bottom>60</bottom>
-							<label>$VAR[InfoPanel]</label>
+							<label>$INFO[ListItem.Plot]</label>
 							<textcolor>unfocused_text</textcolor>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						</control> 
